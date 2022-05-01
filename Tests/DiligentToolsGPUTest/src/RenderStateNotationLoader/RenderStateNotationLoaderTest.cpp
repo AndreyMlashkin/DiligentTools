@@ -104,6 +104,8 @@ TEST(Tools_RenderStateNotationLoader, BasicTest)
     GraphicsPipelineDescReference.DSVFormat         = TEX_FORMAT_D32_FLOAT;
     GraphicsPipelineDescReference.PrimitiveTopology = PRIMITIVE_TOPOLOGY_TRIANGLE_LIST;
     EXPECT_EQ(GraphicsPipelineDescReference, pPSO->GetGraphicsPipelineDesc());
+
+    GTEST_FAIL();
 }
 
 } // namespace
